@@ -1,0 +1,75 @@
+{
+"metadata": {
+    "spec-version": "1.5"
+  },
+  "display-name": "Cloud Vault",
+  "configuration-groups": [
+    {
+      "label": "Vault Credential Configuration",
+      "properties": [
+          {
+            "label": "The URL of the Vault Credentials",
+            "name": "vaultUrl",
+            "widget-type": "textbox",
+            "widget-attributes": {
+              "default": ""
+            }
+          },
+          {
+            "label": "Vault Role",
+            "name": "vaultRole",
+            "widget-type": "textbox",
+            "widget-attributes": {
+              "default": ""
+            }
+          },
+          {
+            "label": "Vault Credential Path",
+            "name": "vaultCredentialPath",
+            "widget-type": "textbox",
+            "widget-attributes": {
+              "default": ""
+            }
+          },
+          {
+            "label": "Vault Namespace Path",
+            "name": "vaultNamespace",
+            "widget-type": "textbox",
+            "widget-attributes": {
+              "default": ""
+            }
+          }
+        ]
+    },
+    {
+      "label": "Data Mapping",
+      "properties": [
+        {
+          "label": "List of fields to mapping Vault - Argument",
+          "name": "fieldsMapping",
+          "widget-type": "keyvalue",
+          "widget-attributes": {
+            "delimiter": ",",
+            "kv-delimiter": ":",
+            "key-placeholder": "Vault Column Name",
+            "value-placeholder": "Argument Name"
+          }
+        }
+      ]
+    },
+    {
+      "label": "GCP",
+      "properties": [
+        {
+          "label": "Service Account to Vault server",
+          "name": "serviceAccount",
+          "widget-type": "textbox",
+          "widget-attributes": {
+            "default": "default"
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": []
+}
